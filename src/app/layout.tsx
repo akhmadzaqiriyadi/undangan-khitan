@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
-import BottomNavbar from '@/components/BottomNavbar'; // Import komponen BottomNavbar
+import BottomNavbar from '@/components/BottomNavbar';
+import AudioPlayer from '@/components/AudioPlayer';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfairDisplay = Playfair_Display({
@@ -46,6 +47,7 @@ export default function RootLayout({
                     {/* Bottom Navbar */}
                     <BottomNavbar />
                 </div>
+                <AudioPlayer />
             </body>
         </html>
     );
