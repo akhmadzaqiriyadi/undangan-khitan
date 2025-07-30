@@ -1,0 +1,52 @@
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
+import BottomNavbar from '@/components/BottomNavbar'; // Import komponen BottomNavbar
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const playfairDisplay = Playfair_Display({
+    subsets: ['latin'],
+    weight: ['400', '700'],
+    variable: '--font-playfair-display',
+});
+
+export const metadata: Metadata = {
+    title: 'Undangan Digital',
+    description: 'Undangan Digital - Dibuat dengan Next.js',
+};
+
+export default function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <html lang="en" className={`${inter.variable} ${playfairDisplay.variable}`}>
+            <body className="font-sans bg-brownAccent flex justify-center items-center min-h-screen">
+                {/* Ini adalah container utama yang akan mensimulasikan layar ponsel */}
+                <div
+                    className="
+                        relative
+                        w-full
+                        max-w-sm
+                        md:max-w-[420px]
+                        aspect-[9/16]
+                        bg-lightBrown
+                        overflow-hidden
+                        shadow-2xl
+                        rounded-lg
+                        flex flex-col
+                    "
+                >
+                    {/* Konten halaman akan berada di sini dan mengisi sisa ruang di atas navbar */}
+                    <div className="flex-grow overflow-y-auto"> {/* Tambahkan flex-grow dan overflow-y-auto */}
+                        {children}
+                    </div>
+
+                    {/* Bottom Navbar */}
+                    <BottomNavbar />
+                </div>
+            </body>
+        </html>
+    );
+}
