@@ -166,11 +166,9 @@ export default function SwipeNavigator({ children }: SwipeNavigatorProps) {
         <>
             {/* Swipe Navigation Hint */}
             {showSwipeHint && (
-                <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black bg-opacity-75 text-white px-4 py-2 rounded-full text-sm animate-pulse">
+                <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black bg-opacity-75 text-white px-2 py-2 rounded-full text-sm animate-pulse">
                     <div className="flex items-center space-x-2">
-                        <span>👈</span>
-                        <span>Geser untuk navigasi</span>
-                        <span>👉</span>
+                        <span>👈 Geser untuk navigasi 👉</span>
                     </div>
                 </div>
             )}

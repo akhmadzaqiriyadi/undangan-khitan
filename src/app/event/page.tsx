@@ -193,7 +193,7 @@ export default function EventPage() {
                             className="font-display text-3xl font-bold mb-6 text-darkBrown"
                             variants={itemVariants}
                         >
-                            TASYAKURAN AQIQAH & KHITAN
+                            ACARA KHITANAN:
                         </motion.h1>
 
                         <motion.div
