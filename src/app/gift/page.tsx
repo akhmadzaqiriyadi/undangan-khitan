@@ -218,12 +218,12 @@ export default function GiftPage() {
                                     
                                     <div className="flex-1 text-left">
                                         <h2 className="font-semibold text-sm mb-1">ShopeePay</h2>
-                                        <p className="font-bold text-base">Supri2552</p>
-                                        <p className="text-xs opacity-90">Username ShopeePay</p>
+                                        <p className="font-bold text-base">085640620627</p>
+                                        <p className="text-xs opacity-90">Username Supri2552</p>
                                     </div>
 
                                     <motion.button
-                                        onClick={() => copyToClipboard('Supri2552')}
+                                        onClick={() => copyToClipboard('085640620627')}
                                         className="px-3 py-2 bg-gradient-to-r from-yellow-600 to-yellow-700 text-white rounded-full text-xs font-medium shadow-lg border border-yellow-500/30 flex items-center gap-1 flex-shrink-0"
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
