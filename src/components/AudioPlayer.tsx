@@ -92,7 +92,7 @@ export default function AudioPlayer() {
                     className="fixed top-4 right-4 md:right-[calc(50%-190px)] z-40 p-3 bg-darkBrown text-lightBrown rounded-full shadow-lg hover:bg-brownAccent transition-colors duration-300"
                     aria-label={isPlaying ? 'Pause music' : 'Play music'}
                 >
-                    {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
+                    {isPlaying ? <Volume2 size={20} /> : <VolumeX size={20} />}
                 </button>
             )}
         </>

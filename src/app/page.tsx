@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Suspense } from 'react'; // Import Suspense
-import OpeningContent from '@/components/OpeningContent'; // Import komponen baru kita
+import { Suspense } from 'react';
+import OpeningContent from '@/components/OpeningContent';
 
 export default function HomePage() {
     return (
@@ -9,8 +9,8 @@ export default function HomePage() {
             <Image
                 src="/images/texture.png"
                 alt="Background Pattern"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 className="opacity-70"
             />
             
@@ -18,7 +18,6 @@ export default function HomePage() {
             <Suspense fallback={
                 <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center text-darkBrown">
                     <p className="font-sans text-lg">Memuat Undangan...</p>
-                    {/* Anda bisa menambahkan spinner atau placeholder yang lebih kompleks di sini */}
                 </div>
             }>
                 <OpeningContent />

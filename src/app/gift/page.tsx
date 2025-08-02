@@ -243,15 +243,6 @@ export default function GiftPage() {
                                 </div>
                             </motion.div>
                         </motion.div>
-
-                        <motion.div
-                            className="mt-6 p-4 bg-yellow-600/20 backdrop-blur-sm rounded-xl border border-yellow-600/30"
-                            variants={itemVariants}
-                        >
-                            <p className="text-sm text-darkBrown opacity-90">
-                                ❤️ Terima kasih atas doa dan hadiah yang diberikan
-                            </p>
-                        </motion.div>
                     </motion.div>
                 </motion.div>
             )}

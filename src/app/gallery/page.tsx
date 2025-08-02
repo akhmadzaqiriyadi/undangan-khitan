@@ -197,15 +197,6 @@ export default function GalleryPage() {
                                 </motion.div>
                             ))}
                         </motion.div>
-
-                        <motion.div
-                            className="mt-4 p-3 bg-yellow-600/20 backdrop-blur-sm rounded-lg border border-yellow-600/30"
-                            variants={itemVariants}
-                        >
-                            <p className="text-xs text-darkBrown opacity-90">
-                                📸 Klik pada foto untuk melihat lebih detail
-                            </p>
-                        </motion.div>
                     </motion.div>
 
                     {/* Image Modal */}

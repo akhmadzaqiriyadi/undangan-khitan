@@ -150,7 +150,7 @@ export default function MapsPage() {
 
                         {/* Map Container */}
                         <motion.div
-                            className="w-full h-[280px] bg-white/20 rounded-xl shadow-lg overflow-hidden mb-6 border-2 border-yellow-600/30 backdrop-blur-sm"
+                            className="w-full h-[180px] bg-white/20 rounded-xl shadow-lg overflow-hidden mb-6 border-2 border-yellow-600/30 backdrop-blur-sm"
                             variants={itemVariants}
                         >
                             <iframe
