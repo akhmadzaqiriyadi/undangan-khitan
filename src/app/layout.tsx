@@ -13,8 +13,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-    title: 'Undangan Digital',
-    description: 'Undangan Digital - Dibuat dengan Next.js',
+    title: 'Undangan Khitaman Kenzo',
+    description: 'Bapak Supriyadi Arramdani & Bunda Reni Dwi Hastuti',
 };
 
 export default function RootLayout({
