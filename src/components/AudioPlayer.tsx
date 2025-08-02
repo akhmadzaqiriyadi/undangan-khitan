@@ -85,11 +85,11 @@ export default function AudioPlayer() {
         <>
             <audio ref={audioRef} src={audioSrc} loop preload="auto" />
 
-            {/* Tombol kontrol musik yang mengambang di pojok kanan bawah */}
+            {/* Tombol kontrol musik yang mengambang di pojok kanan atas */}
             {showControls && (
                 <button
                     onClick={togglePlay}
-                    className="fixed bottom-20 right-4 md:right-[calc(50%-190px)] z-40 p-3 bg-darkBrown text-lightBrown rounded-full shadow-lg hover:bg-brownAccent transition-colors duration-300"
+                    className="fixed top-4 right-4 md:right-[calc(50%-190px)] z-40 p-3 bg-darkBrown text-lightBrown rounded-full shadow-lg hover:bg-brownAccent transition-colors duration-300"
                     aria-label={isPlaying ? 'Pause music' : 'Play music'}
                 >
                     {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
