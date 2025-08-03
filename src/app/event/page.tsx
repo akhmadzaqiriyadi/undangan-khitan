@@ -82,8 +82,8 @@ function Countdown({ targetDate }: { targetDate: Date }) {
 
 export default function EventPage() {
     const [isVisible, setIsVisible] = useState(false);
-    // Tanggal target untuk countdown (Sabtu, 09 Agustus 2025, 10.00 AM)
-    const targetDate = new Date('2025-08-09T10:00:00');
+    // Tanggal target untuk countdown (Sabtu, 11 Agustus 2025, 10.00 AM)
+    const targetDate = new Date('2025-08-11T10:00:00');
 
     useEffect(() => {
         setIsVisible(true);
@@ -211,11 +211,11 @@ export default function EventPage() {
                                 className="space-y-2 mb-4"
                                 variants={itemVariants}
                             >
-                                <p className="font-display text-xl font-bold">
-                                    Sabtu, Minggu, Senin
+                                <p className="font-display text-3xl font-bold">
+                                    Senin
                                 </p>
                                 <p className="font-display text-xl font-bold text-yellow-700">
-                                    09, 10, 11 Agustus 2025
+                                    11 Agustus 2025
                                 </p>
                                 <p className="font-sans text-base font-semibold">
                                     10.00 AM - Selesai
